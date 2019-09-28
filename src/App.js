@@ -1,6 +1,10 @@
 import React, {Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
+
+// Needed for react-bootstrap to work.
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 import BackButton from './Components/BackButton';
 
 // function App() {

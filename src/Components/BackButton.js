@@ -7,8 +7,8 @@ const backButton = (props) => {
     return (
         // <div className='p-2 bg-info'>{props.text}</div>
         <Container>
-            <Row className={props.classes}>
-                <Col>{props.text}</Col>
+            <Row className={props.rowClass}>
+                <Col className={props.colClass}>{props.text}</Col>
             </Row>
         </Container>
     )

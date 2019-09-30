@@ -44,22 +44,22 @@ class App extends Component {
           headerText='Jumbotron'
           headerSubtext='subtext'
         />
-        <div className='d-flex flex-row mx-5 ButtonArea'>
-          <div className='col-sm-3'></div>
+        <div className='d-flex flex-row mx-5 ButtonArea justify-content-center'>
+          {/* <div className='col-sm-3'></div> */}
           <BackButton 
-            // classes='bg-success'
-            colClass='bg-success'
-            text='down'
+            // className='tallButton'
+            buttonClass='tallButton'
+            downSymbol='<'
           />
-          <div className='col-2 bg-danger'>Number</div>
+
+          <div className='numberArea col-sm-1'>0</div>
+
 
           <ForwardButton 
-            // classes='bg-warning'
-            colClass='bg-warning'
-            text='up'
-          />
+            buttonClass='tallButton'
+            upSymbol='>'/>
 
-<div className='col-sm-3'></div>
+          {/* <div className='col-sm-3'></div> */}
 
         </div>
       </div>

@@ -6,6 +6,8 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import BackButton from './Components/BackButton';
+import ForwardButton from './Components/ForwardButton';
+import PageHeader from './Components/PageHeader';
 
 // function App() {
 //   return (
@@ -31,8 +33,17 @@ import BackButton from './Components/BackButton';
 class App extends Component {
   render() {
     return (
-      <div className='d-flex flex-row'>
-        <BackButton text='text'/>
+      // <div className='d-flex flex-row'>
+      //   <BackButton text='down' classes='bg-info'/>
+      //   <ForwardButton text='up' classes='bg-warning'/>
+      // </div>
+
+      <div className='d-flex flex-column'>
+        <PageHeader 
+          headerColor='bg-info'
+          headerText='Jumbotron'
+          headerSubtext='subtext'
+        />
       </div>
     )
   }

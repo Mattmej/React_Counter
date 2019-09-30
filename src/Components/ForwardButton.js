@@ -3,7 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-const backButton = (props) => {
+const forwardButton = (props) => {
     return (
         // <div className='p-2 bg-info'>{props.text}</div>
         <Container>
@@ -14,4 +14,4 @@ const backButton = (props) => {
     )
 };
 
-export default backButton;
+export default forwardButton;

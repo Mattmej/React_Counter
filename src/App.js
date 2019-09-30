@@ -8,6 +8,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import BackButton from './Components/BackButton';
 import ForwardButton from './Components/ForwardButton';
 import PageHeader from './Components/PageHeader';
+import NumberArea from './Components/NumberArea';
 
 // function App() {
 //   return (
@@ -80,7 +81,11 @@ class App extends Component {
             click={() => this.subtractNumber()}
           />
 
-          <div className='numberArea col-sm-1'>0</div>
+          {/* <div className='numberArea col-sm-1'>0</div> */}
+
+          <NumberArea 
+            number={this.state.counter}
+          />
 
 
           <ForwardButton 

@@ -6,12 +6,6 @@ import Button from 'react-bootstrap/Button';
 
 const backButton = (props) => {
     return (
-        // <div className='p-2 bg-info'>{props.text}</div>
-        // <Container>
-        //     <Row className={props.rowClass}>
-        //         <Col className={props.colClass}>{props.text}</Col>
-        //     </Row>
-        // </Container>
         <Button 
             variant="primary" 
             size='lg' 

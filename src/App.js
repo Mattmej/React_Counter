@@ -10,26 +10,6 @@ import ForwardButton from './Components/ForwardButton';
 import PageHeader from './Components/PageHeader';
 import NumberArea from './Components/NumberArea';
 
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/App.js</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
 
 class App extends Component {
 
@@ -61,10 +41,6 @@ class App extends Component {
 
   render() {
     return (
-      // <div className='d-flex flex-row'>
-      //   <BackButton text='down' classes='bg-info'/>
-      //   <ForwardButton text='up' classes='bg-warning'/>
-      // </div>
 
       <div className='d-flex flex-column'>
         <PageHeader 
@@ -73,28 +49,21 @@ class App extends Component {
           headerSubtext='subtext'
         />
         <div className='d-flex flex-row mx-5 ButtonArea justify-content-center'>
-          {/* <div className='col-sm-3'></div> */}
           <BackButton 
-            // className='tallButton'
             buttonClass='tallButton'
             downSymbol='<'
             click={() => this.subtractNumber()}
           />
 
-          {/* <div className='numberArea col-sm-1'>0</div> */}
-
           <NumberArea 
             number={this.state.counter}
           />
-
 
           <ForwardButton 
             buttonClass='tallButton'
             upSymbol='>'
             click={() => this.addNumber()}
           />
-
-          {/* <div className='col-sm-3'></div> */}
 
         </div>
       </div>

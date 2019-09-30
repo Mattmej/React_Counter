@@ -44,6 +44,16 @@ class App extends Component {
           headerText='Jumbotron'
           headerSubtext='subtext'
         />
+        <div className='d-flex flex-row mx-auto'>
+          <BackButton 
+            classes='bg-success'
+            text='down'
+          />
+          <ForwardButton 
+            classes='bg-warning'
+            text='up'
+          />
+        </div>
       </div>
     )
   }

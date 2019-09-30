@@ -14,7 +14,9 @@ const forwardButton = (props) => {
         //     </Row>
         // </Container>
 
-        <Button variant="success" size='lg' className={props.buttonClass}>{props.upSymbol}</Button>
+        <Button variant="success" size='lg' className={props.buttonClass} onClick={props.click}>
+            {props.upSymbol}
+        </Button>
 
     )
 };

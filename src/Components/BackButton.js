@@ -12,7 +12,14 @@ const backButton = (props) => {
         //         <Col className={props.colClass}>{props.text}</Col>
         //     </Row>
         // </Container>
-        <Button variant="primary" size='lg' className={props.buttonClass}>{props.downSymbol}</Button>
+        <Button 
+            variant="primary" 
+            size='lg' 
+            className={props.buttonClass}
+            onClick={props.click}
+        >
+            {props.downSymbol}
+        </Button>
     )
 };
 

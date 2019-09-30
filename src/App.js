@@ -31,6 +31,33 @@ import PageHeader from './Components/PageHeader';
 // }
 
 class App extends Component {
+
+  state = {
+    counter: 0
+  }
+
+  addNumber = () => {
+    let currentCounter = this.state.counter;
+    currentCounter++;
+
+    this.setState({
+      counter: currentCounter
+    })
+
+    console.log(this.state.counter);
+  }
+
+  subtractNumber = () => {
+    let currentCounter = this.state.counter;
+    currentCounter--;
+
+    this.setState({
+      counter: currentCounter
+    })
+
+    console.log(this.state.counter);
+  }
+
   render() {
     return (
       // <div className='d-flex flex-row'>
@@ -50,6 +77,7 @@ class App extends Component {
             // className='tallButton'
             buttonClass='tallButton'
             downSymbol='<'
+            click={() => this.subtractNumber()}
           />
 
           <div className='numberArea col-sm-1'>0</div>
@@ -57,7 +85,9 @@ class App extends Component {
 
           <ForwardButton 
             buttonClass='tallButton'
-            upSymbol='>'/>
+            upSymbol='>'
+            click={() => this.addNumber()}
+          />
 
           {/* <div className='col-sm-3'></div> */}
 

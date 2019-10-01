@@ -41,26 +41,29 @@ class App extends Component {
 
   render() {
     return (
-
-      <div className='d-flex flex-column'>
+      <div className='firstContainer d-flex flex-column'>
         <PageHeader 
           headerColor='bg-info'
-          headerText='Jumbotron'
-          headerSubtext='subtext'
+          headerText='React Counter App'
+          headerSubtext='Press buttons to increment or decrement by 1.'
         />
-        <div className='d-flex flex-row mx-5 ButtonArea justify-content-center'>
+
+        <div className='row space'></div>
+
+        <div className='d-flex flex-row ButtonArea justify-content-center'>
           <BackButton 
-            buttonClass='tallButton'
+            buttonClass='backButton'
             downSymbol='<'
             click={() => this.subtractNumber()}
           />
 
           <NumberArea 
             number={this.state.counter}
+            numberAreaClass='numberArea'
           />
 
           <ForwardButton 
-            buttonClass='tallButton'
+            buttonClass='forwardButton'
             upSymbol='>'
             click={() => this.addNumber()}
           />

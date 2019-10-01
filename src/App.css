@@ -41,7 +41,8 @@
 
 .backButton, .forwardButton {
   /* height: 200px; */
-  height: auto;
+  /* height: auto; */
+  height: 100%;
   width: auto;
 }
 
@@ -61,7 +62,7 @@
   background-color: lightgray;
   /* width: auto; */
   width: 100%;
-  /* margin: 0 auto; */
+  margin: 0 auto;
   /* margin: 0; */
 }
 
@@ -84,4 +85,12 @@ html, body {
 
 .space {
   height: 100px;
+}
+
+.mainAppContainer {
+  width: 15%;
+}
+
+.jumbotron {
+  width: 100%;
 }

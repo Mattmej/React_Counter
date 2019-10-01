@@ -41,7 +41,7 @@ class App extends Component {
 
   render() {
     return (
-      <div className='firstContainer d-flex flex-column'>
+      <div className='firstContainer d-flex flex-column align-items-center'>
         <PageHeader 
           headerColor='bg-info'
           headerText='React Counter App'
@@ -50,7 +50,7 @@ class App extends Component {
 
         <div className='row space'></div>
 
-        <div className='d-flex flex-row ButtonArea justify-content-center'>
+        <div className='d-flex flex-row justify-content-center mainAppContainer'>
           <BackButton 
             buttonClass='backButton'
             downSymbol='<'

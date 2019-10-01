@@ -7,10 +7,12 @@ import Button from 'react-bootstrap/Button';
 
 const forwardButton = (props) => {
     return (
-
+        <div>
         <Button variant="success" size='lg' className={props.buttonClass} onClick={props.click}>
             {props.upSymbol}
         </Button>
+        </div>
+
 
     )
 };

@@ -6,7 +6,8 @@ import Button from 'react-bootstrap/Button';
 
 const backButton = (props) => {
     return (
-        <Button 
+        <div>
+ <Button 
             variant="primary" 
             size='lg' 
             className={props.buttonClass}
@@ -14,6 +15,8 @@ const backButton = (props) => {
         >
             {props.downSymbol}
         </Button>
+        </div>
+       
     )
 };
 

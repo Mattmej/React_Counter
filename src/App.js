@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 // Needed for react-bootstrap to work.
@@ -17,6 +16,7 @@ class App extends Component {
     counter: 0
   }
 
+  // Increments by +1
   addNumber = () => {
     let currentCounter = this.state.counter;
     currentCounter++;
@@ -28,6 +28,7 @@ class App extends Component {
     console.log(this.state.counter);
   }
 
+  // Increments by -1
   subtractNumber = () => {
     let currentCounter = this.state.counter;
     currentCounter--;
@@ -39,16 +40,21 @@ class App extends Component {
     console.log(this.state.counter);
   }
 
+
   render() {
     return (
       <div className='firstContainer d-flex flex-column align-items-center'>
+
+        {/* Jumbotron */}
         <PageHeader 
           headerColor='bg-info'
           headerText='React Counter App'
           headerSubtext='Press buttons to increment or decrement by 1.'
         />
 
+        {/* Spacing */}
         <div className='row space'></div>
+
 
         <div className='d-flex flex-xl-row flex-column justify-content-center mainAppContainer'>
           <BackButton 
